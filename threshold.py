@@ -5,7 +5,7 @@ img=cv.imread('photos/cat.jpg',0)
 ret, thresh1 = cv.threshold(img,50,255,cv.THRESH_BINARY) 
 ret, thresh2 = cv.threshold(img,50,255,cv.THRESH_BINARY_INV) 
 ret, thresh3 = cv.threshold(img,50,255,cv.THRESH_TRUNC) 
-ret, thresh4 = cv.threshold(img,50,255,cv.THRESH_TOZERO) 
+ret, thresh4 = cv.threshold(img,50,255,cv.THRESH_TOZERO) # here if the pixel value is less then 50 then the pixel assigned will be zero
 ret, thresh5 = cv.threshold(img,50,255,cv.THRESH_TOZERO_INV) 
   
  
